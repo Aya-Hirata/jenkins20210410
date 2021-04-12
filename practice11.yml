@@ -145,8 +145,6 @@ Resources:
       SecurityGroupIds:
         - !Ref PublicSecurityGroup
       UserData: !Base64 
-        #!/bin/bash -ex
-        # put your script here
         sudo yum update -y
       Tags:
         - Key: Name
